@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;"> Nano ویرایش کد داخل فایل ها با پکیج </h1>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">با نصب پکیج nano میتونید کد های درون یک فایل رو ویرایش کنید، به تصویر زیر دقت کنید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_161702_087-768x367.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">دستور نصب پکیج nano:</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">apt install nano</div>
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">دستور ویرایش فایل با پکیج نانو:</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">nano name.txt</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">جای name.txt اسم فایل مورد نظر رو مینویسیم.</div>
+</body>
+</html>
