@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">امکانات </h1>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">اتصال امن برای استفاده از پروتکل برای کلاینت و سرور SSH امکان استفاده گرافیکی و دریافت git امکان اتصال چندین کاربر و اجرای دستور پشتیبانی از زبان های Python , Perl, Python, Ruby and Node.js امکان استفاده از کیبرد در termux از طریق بلوتوث و امکان استفاده از کلید های میانبر درکیبرد بسته های نصبی مهم apt ,pkg
+</div>
+</body>
+</html>
