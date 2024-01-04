@@ -10,6 +10,17 @@
   </style>
 </head>
 <body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
   <h1 style="font-size: 1cm;">اموزش ترموکس یا Termux</h1>
   <script>
     if (window.innerWidth <= 768) {
