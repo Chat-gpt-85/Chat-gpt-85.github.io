@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">آموزش دانلود فایل در ترموکس</h1>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">برای دانلود هر فایلی در ترموکس از دستور wget استفاده میکنیم، در تصویر زیر نحوه استفاده از این دستور رو مشاهده میکنید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_161804_892-768x245.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">برای مثال یه نفر فایل یه اسکریپت رو به صورت zip برای شما میفرسته و میخواید اجراش کنید، کافیه فایل زیپ رو در جایی آپلود کنید و با دستور wget در ترمینال دانلودش کنید.
+
+ </div>
+</body>
+</html>
