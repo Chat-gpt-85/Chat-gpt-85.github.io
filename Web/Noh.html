@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">آموزش اجرای اسکریپت ها در ترموکس </h1>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">اسکریپت یه کد هست که با زبان های برنامه نویسی مختلف نوشته شده و گیت هاب هم منبع اسکریپت های مختلفه،
+یه اسکریپت میتونه حتی یه ابزار تست و نفوذ شبکه باشه یا یه کد ساده،
+در تصویر برای تست ما یه اسکریپت ساده رو اجرا میکنیم تا با نحوه اجرای اسکریپت ها در ترموکس آشنا بشید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_161533_668.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">برای دانلود هر اسکریپت که در گیت هاب هست باید از دستور git clone استفاده کنیم ، جلوی دستور گیت کلون باید لینک اسکریپت مورد نظرمون رو بنویسیم که در گیت هاب هست،
+و برای اجرای هر اسکریپت باید ابتدا اونو دانلود کنید و وارد پوشه اون اسکریپت بشید و فایل اجرایی اون اسکریپت رو اجرا کنید،
+اسکریپت ها معمولا دستور اجرا کردنشون داخل توضیحاتشون نوشته شده اما اگه توضیحاتی وجود نداشت کافیه ببینید اسکریپت به چه زبانی نوشته شده و با همون زبان اجراش کنید
+مثلا اسکریپتی فایل اجرایش hello.py باشه یعنی با پایتون نوشته شده پس مینویسیم
+python hello.py
+و اسکریپت اجرا میشه ، به زبان های دیگه هم نوشته باشه باید همین کارو کنیم.</div>
+</body>
+</html>
