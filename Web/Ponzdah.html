@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">آموزش بستن پروسه های درحال اجرا در پس زمینه ترموکس:</h1>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">شاید اسکریپتی اجرا کردید که میخواید اونو ببندید یا ببینید چه پروسه ها و فعالیت هایی تو ترمینالتون درحال اجراست!
+در این حالت از دستور
+ps -ax
+استفاده میکنیم تا پروسه های درحال اجرا نمایش داده بشن:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_162538_573-768x261.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">واسه قطع یه پروسه عدد PID اون پروسه رو جلوی دستور kill مینویسیم و اینتر میکنیم،
+مثلا:
+kill 23101
+
+</div>
+</body>
+</html>
