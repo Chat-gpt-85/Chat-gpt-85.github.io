@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">نصب پیش نیاز ها</h1>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">سپس پس از ورود به ترموکس دستورات اصلی که برای بروزشدن است را استفاده کنید : apt update apt upgrade دو دستوری که در بالا ذکر کردیم را چند روز یک بار استفاده کنید تا همیشه ترموکس شما بروز باشد سپس پس از بروزرسانی ابزار های اولیه و مورد نیاز را نصب می کنید که شامل پکیج های زیر است apt install python 
+|  apt install python2 
+|  apt install perl 
+|  apt install php 
+|  apt install curl 
+|  apt install git 
+|  apt install pip 
+|  apt install pip2 
+|  apt install pip3 
+|  apt install wget 
+|  apt install python2
+  سپس پس از نصب پکیج های بالا اقدام به نصب ابزار ها می کنیم که در ادامه نصب چندین ابزار اصلی و مهم را خدمت شما عزیزان عرض می کنیم.</div>
+</body>
+</html>
