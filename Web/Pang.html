@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">آموزش اضافه کردن کلید های بیشتر به ترموکس</h1>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_160809_156-768x231.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">کاربرد این کلید ها چیست؟</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">از این کلید ها واسه جا به جایی بین متن ها برای ویرایش فایل ها یا دستورات دیگه میتونید استفاده کنید،
+
+ابتدا دستورات زیر رو به ترتیب در ترموکس وارد کنید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_160922_520-768x67.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<p>Copy the following text:</p>
+<textarea id="copyText" rows="4" cols="50">
+mkdir ~/.termux
+cd .termux
+echo "extra-keys = [['ESC','/','-','HOME','UP','END','PGUP'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN']]" > ~/.termux/termux.properties
+</textarea>
+
+<button onclick="copyFunction()">Copy Text</button>
+<script>
+function copyFunction() {
+  var copyText = document.getElementById("copyText");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">سپس ترموکس رو کامل ببندید و از اول واردش بشید، بعد میبینید که دکمه های جدید اضافه شدن.</div>
+</body>
+</html>
