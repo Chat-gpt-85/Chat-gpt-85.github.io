@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">آموزش پکیج ها در ترموکس</h1>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_161135_965.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">متن هایی که به رنگ سبز میبینید اسم پکیج ها هستن و جلوشون نسخه نصب شده اون پکیج هست ،</div>
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">قبل آموزش نصب پکیج ها میخوایم به شما بگیم که پکیج ها چی هستن !</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">بزارید یه مثال خیلی ساده بزنم ، فرض کنید تو گوشیتون یه فایل زیپ دانلود کردید و میخواید اونو استخراج کنید و میرید یه نرم افزار باز کردن فایل زیپ دانلود میکنید ، یا یه فیلم دانلود کردید و میخواید اونو اجرا کنید و نرم افزار ویدیو پلیر دانلود میکنید ، یا یه پی دی اف دانلود کردید و میخواید اونو باز و اجرا کنید و یه پی دی اف رایدر دانلود میکنید ،
+پکیج ها در ترمینال هم کارشون دقیقا همینه،
+به تصویر زیر توجه کنید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_161239_222.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">حالا به مثال دیگری دقت کنید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_161329_150.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">برای نصب پکیج ها همیشه از دستور apt install استفاده میکنیم و اسم پکیجی که میخوایم نصب بشه جلوش مینویسیم،
+مثلا یه اسکریپت که به زبان php نوشته شده باشه واسه اجرا شدنش پیش نیازش نصب بودن پکیج php هست و با این دستور پکیجش رو نصب میکنیم
+apt install php
+یا اگه پایتون باشه
+apt install python
+دستور حذف پکیج ها apt remove هست و جلوش اسم پکیجی که میخوایم حذف بشه مینویسیم،
+
+نکته: خیلی وقتا ممکنه موقع نصب یه پکیج با ارور مواجه بشید ، اکثر ارور های نصب پکیج رو میشه با اپدیت کردن ترمینال حل کرد!
+دستور آپدیت ترمینال:
+دستورات زیر رو به ترتیب وارد کنید
+apt update
+apt ugrade
+و جاهایی که متوقف میشه N بزنید و اینتر کنید برای ادامه به صورت خودکار،
+
+و تو نصب پکیج ها هرجایی ازتون سوال کرد y رو بزنید و اینتر کنید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_161443_220-768x259.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+</body>
+</html>
