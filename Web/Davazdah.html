@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">Ngork آموزش اجرای پورت فورواردینگ با</h1>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">کافیه ترمینال رو باز کنیم و کد زیر رو در اون وارد کنیم:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_161901_260-768x374.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">
+عدد 3333 پورت ماست و واسه پورت فرواردینگ هم باید همون رو وارد کنیم،
+بعد وارد کردن دستور بالا هر فایل و سورسی رو میتونیم در مرورگر به صورت آنلاین اجرا و باز کنیم با لینک زیر:
+http://127.0.0.1:3333</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_161959_265.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">نمونه فایل php اجرا شده در لوکال هاست ، حالا اگه سورس سایت یا هرچیز دیگه ای هم جای این فایل بود اجرا میشد !
+
+میدونستید اگه ما روی سرور مجازی که آی پی آنلاین داره لوکال هاست اجرا کنیم میتونیم آی پی سرور رو مثل لینک سایتمون به همه بدیم؟ بله با این روش میتونید از سرور مجازی به عنوان هاست و دامنه استفاده کنید.
+
+اما لینک آدرس لوکال هاست فقط برای شبکه داخلی خودمون اجرا میشه!
+پس چطور میتونیم اون لینک رو به صورت آنلاین برای همه بفرستیم؟!
+
+در این زمان باید از پورت فرواردینگ استفاده کنیم !
+پورت فرواردینگ لینک لوکال هاست ما رو به یه لینک آنلاین تبدیل میکنه که میتونیم اونو برای همه بفرستیم،</div>
+</body>
+</html>
