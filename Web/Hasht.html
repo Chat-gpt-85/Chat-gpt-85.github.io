@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">Termux نصب ابزار های مهم در </h1>
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">ابزار Nmap
+</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">اولین ابزار کاربردی ابزار Nmap  است که می توانید با استفاده از دستور زیر این ابزار قدرتمند را نصب کنید
+</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">apt install nmap</div>
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">ابزار Hydra</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">ابزار بعدی که قصد نصب و استفاده از ان را داریم ابزار معروف Hydra است که با استفاده از دستور زیر می توانید اقدام به نصب این ابزار کنید
+</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">apt install hydra
+</div>
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">ابزار Sqlmap
+</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">ابزار دیگری که در ادامه با ان اشنا می شوید ابزار Sqlmap می باشد که با استفاده از این ابزار می توانید به وب سایت هایی که دارای باگ Sqli هستند تست نفوذ انجام دهید البته این ابزار محدودیت هایی دارد و پیشنهاد میکنیم تنها به این ابزار بسنده نکنید اما در دستگاه موبایل بسیار کاربردی است. ابتدا با استفاده از دستور زیر این ابزار را دانلود کنید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">git clone https://github.com/sqlmapproject/sqlmap</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">پس از دانلود این ابزار با دستور زیر وارد دایرکتوری مورد نظر شوید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">cd sqlmap
+</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">سپس به فایل sqlmap.py با استفاده از دستور زیر دسترسی اجرایی دهید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">chmod +x sqlmap.py
+</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">و در انتها با دستور زیر این ابزار را اجرا کنید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">python sqlmap.py
+</div>
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">ابزار Nikto</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">ابزار مهم و کاربردی بعدی اسکنر Nikto است که با استفاده از دستور زیر می توانیم اقدام به نصب این ابزار کنید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">git clone https://github.com/sullo/nikto</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">پس از دانلود این ابزار با استفاده از دستور زیر وارد دایرکتوی ان شوید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">cd nikto</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">در مرحله بعدی وارد پوشه program شوید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">cd program</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">سپس پس از وارد شدن به دایرکتوری program با استفاده از دستور زیر ابزار را اجرا کنید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">perl nikto.pl
+</div>
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">ابزار JoomScan</div>
+<div dir="rtl" style="color: #FFD700; font-size: 18px;">این ابزار یک اسکنر قدرتمند برای اسکن امنیتی وب سایت های جوملا استفاده می شود ابتدا این ابزار را با استفاده از دستور زیر در ترموکس دانلود کنید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">git clone https://github.com/04x/JoomScan</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">سپس وارد دایرکتوری ابزار شوید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">cd JoomScan
+</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">و در نهایت با استفاده از دستور زیر ابزار را اجرا کنید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">python2 joomscan.py
+</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">سپس لینک سایت مورد نظر خود را وارد نمایید و می توانید مشاهده کنید که این ابزار اطلاعاتی کامل و جامع از جمله CMS  سایت , نوع وب سرور , ایپی و ورژن مورد استفاده شده را در ابتدا به ما نمایش می دهد و اگر موفق به یافت پیج ادمین شود برای ما به نمایش می گذارد و سپس به اسکن کامپوننت ها می پردازد و کامپوننت های استفاده شده سایت را می توانید پس از اسکن مشاهده کنید و به دنبال اسیب پذیری در ان ها باشید.
+</div>
+</body>
+  </html>
