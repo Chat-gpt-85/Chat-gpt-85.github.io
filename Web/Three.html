@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">Termux نحوه نصب و اجرای</h1>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">آموزش دستور ls : دستور ال اس برای نمایش فایل ها و پوشه ها در ترموکس به کار میره و پر تکرار ترین دستور در ترمینال هست که همیشه مورد استفاده قرار میگیره ، و با سویچ های مختلف میتونیم اونو به کار ببریم، در تصویر زیر دستورات ls رو به همراه کاربردشون میبینید:</div>
+
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_155916_928-735x1024.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">سوئیچ چیست؟</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">سوئیچ به کد – گفته میشه که دستور اصلی رو به همراه ویژگی هایی که در دستور وجود داره اجرا میکنه.
+توجه: اون drwx سطح دسترسی فایل رو نشون میده و سطح دسترسی رو میتونید با دستور chmod تغیر بدید،
+مثلا دستور
+chmod +x salam
+سطح دسترسی پوشه salam رو در حد روت بالا میبره..</div>
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">آموزش دستور pwd :</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">دستور پی دبلیو دی مسیری که در اون هستیم رو نشون میده، در تصویر زیر میتونید نمونه دستور رو مشاهده کنید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_160020_594-768x122.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">آموزش دستور cd : </div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">دستور سی دی برای جا به جایی بین مسیر ها به کار میره مثلا وقتی بخواید وارد یه پوشه بشید یا ازش بیاید بیرون به کار میره، در تصویر زیر میتونید نمونه استفاده از این دستور رو مشاهده کنید: </div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_160119_840-768x289.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">همیشه در ترمینال ترموکس پوشه ها به رنگ آبی هستن و فایل ها به رنگ سفید..</div>
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">آموزش دستور mkdir :</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">با دستور mkdir میتونید در ترموکس پوشه بسازید ، در تصویر زیر با نحوه کار این دستور آشنا میشید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_160209_766-768x243.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">آموزش دستور touch :</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">دستور تاچ هم فایل میسازه و کافیه اسم فایلی که میخوایم ساخته بشه جلوی این دستور بنویسیم،مثل تصویر زیر:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_160319_050-768x130.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">موزش دستور rm : </div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">دستور rm برای حذف یک فایل یا پوشه بکار برده میشه و در تصویر زیر میتونید نحوه استفاده از این دستور رو مشاهده کنید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_160419_742-768x145.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">آموزش دستور cp و mv : </div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">دستور cp برای کپی کردن فایل هست و دستور mv برای انتقال فایل، در تصویر زیر میتونید نحوه استفاده از این دستور رو مشاهده کنید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_160516_692-768x370.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+<div dir="rtl" style="color: #00CED1; font-size: 18px;">آموزش دستور cat و more و less :</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">دستور cat برای نمایش کامل کد های یک فایل هست و دستور more برای نمایش کد های فایل های حجیم به صورت کم کم به کار میره و دستور less هم برای نمایش کد های فایل به صورت صفحه به صفحه و میتونید در تصویر زیر نحوه استفاده از این کد ها رو مشاهده کنید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_160613_953-768x948.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+</body>
+  </html>
