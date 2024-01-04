@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;"> Termux در Session پایان دادن </h1>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">برای پایان دادن به Session ایجاد شده در ترموکس ابتدا وارد ترموکس شوید و زمانی که هیچ ابزاری اجرا نیست دستور exit  را وارد نمایید تا Session بسته شده و از ابزار خارج میشود
+</div>
+</body>
+</html>
