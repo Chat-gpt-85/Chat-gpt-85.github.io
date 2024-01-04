@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">چند ترفند جالب و سرگرم کننده</h1>
+ <div dir="rtl" style="color: #FFD700; font-size: 16px;">با دستور زیر پیشنیاز های لازم را نصب کنید
+</div>
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">apt install sl
+</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">سپس دستور زیر را وارد کنید تا اتفاقی جالب را تجربه کنید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">sl
+</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">اسکریپت بعدی اسکریپت figlet می باشد که با استفاده از دستور زیر می توانید این ابزار را نصب نمایید
+</div>
+<div dir="rtl" style="color: #7B68EE; font-size: 16px;">apt install figlet
+</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">سپس نام این ابزار را وارد کنید و عبارت مورد نظر خود را در ان وارد کنید و پس از Enter کردن خواهید دید که ان عبارتی که وارد کرده اید برای ما به صورت زیبایی چاپ می شود.
+</div>
+</body>
+</html>
