@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;"> استفاده امن از تلگرام با شبکه Tor در ترموکس</h1>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">در ابتدا برای امنیت و جلوگیری از هک تلگرام با استفاده از دستور زیر Tor را در ترموکس اجرا کنید
+</div>
+<div dir="rtl" style="color: #7B68EE ; font-size: 16px;">tor</div>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">سپس به تلگرام روید و وارد قسمت Settings  شوید پس از ان به قسمت  Data and Storage  روید وارد قسمت Proxy Settings  شوید و از قسمت add proxy اقدام به ساخت یک پروکسی جدید کنید در قسمت سرور ,  ایپی : 127.0.0.1 و در قسمت Port   ,  پورت :  9050 را وارد نمایید سپس پس از اضافه شدن پروکسی به لیست با کلیک بر روی پروکسی مورد نظر پروکسی را اجرا کنید و خوهید دید که تلگرام با سرعت بالایی برای ما فعال می شود و می توانید از ان به صورت امن استفاده کنید و برای غیر فعال کردن سرویس تور تنها کافی است تا Session ایجاد شده در Termux را پایان بدهید
+</div>
+</body>
+</html>
