@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: 	#00FF00;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            alert('متن نمی تواند کپی شود');
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
+<h1 style="font-size: 0.8cm;">آموزش دستورات اطلاعات سیستم</h1>
+<div dir="rtl" style="color: #FFD700; font-size: 16px;">در تصویر زیر دستورات اطلاعات سیستم رو میتونید کامل مشاهده کنید:</div>
+<img src="https://funnylearn.ir/wp-content/uploads/2022/12/IMG_20221227_160712_895-768x660.jpg" alt="تصویر شما"style="width:100%; height:auto;">
+</body>
+</html>
